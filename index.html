@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=320" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <section id="wrapper-all">
+      <nav id="nav">
+        <div class="nav-container">
+          <div class="nav-title-container">
+            <a href="#home" class="nav-title-a">
+              <h1 class="nav-font-title nav-title-red">猫の</h1>
+              <h1 class="nav-font-title">お寿司</h1>
+            </a>
+          </div>
+          <div class="nav-ham">
+            <div class="nav-ham-container" onclick="showNavItems(),checkHam()">
+              <div class="ham-icon ham-before ham-active"><i class="fas fa-bars"></i></div>
+              <div class="ham-icon ham-after"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
+          <div class="nav-items nav-items-hidden"id="nav-ul">         
+              <ul class="nav-ul" >
+                <li class="nav-li home-li current" onclick="removeNavItems(),removeHam()"><a href="#home">Home</a></li>
+                <li class="nav-li about-li" onclick="removeNavItems(),removeHam()"><a href="#about">About</a></li>
+                <li class="nav-li menu-li" onclick="removeNavItems(),removeHam()"><a href="#menu">Menu</a></li>
+                <li class="nav-li team-li" onclick="removeNavItems(),removeHam()"><a href="#team">Team</a></li>
+                <li class="nav-li res-li" onclick="removeNavItems(),removeHam()"><a href="#reservation">Reservation</a></li>
+                <li class="nav-li contact-li" onclick="removeNavItems(),removeHam()"><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="body-wrapper">
+        <section id="home" class="section-main">
+          <div id="div-home-container">
+            <div class="div-home-content">
+              <h1 class="home-font-title">Neko Sushi</h1>
+              <p class="font-jp home-font-p">素晴らしいお寿司</p>
+              <div class="home-btn-container">
+                <button class="btn home-btn-book">Book Now</button>
+                <a href="#menu" class="a home-a-menu">Menu</a>
+              </div>
+              <div class="gif-banner">
+                <div class="gif-container">
+                  <img class="home-gif"src="img/home-1.gif" alt="">
+                </div>
+                <div class="gif-container">
+                  <img class="home-gif"src="img/home-2.gif" alt="">
+                </div>
+                <div class="gif-container">
+                  <img class="home-gif"src="img/home-3.gif" alt="">
+                </div>
+                <div class="gif-content gif-content-1">Book Online</div>
+                <div class="gif-content gif-content-2">Fast Delivery</div>
+                <div class="gif-content">Best Sushi</div>
+              </div>
+            </div>
+          </div>
+          <div class="div-home-img"></div>
+        </section>
+    
+        <section id="about" class="section-main">
+          <div id="div-about-container">
+            <div class="about-img-container">
+              <h1 class="section-title">About us</h1>
+              <div class="about-img-1"></div>
+              <div class="about-img-2"></div>
+            </div>
+            <div class="about-content-container">
+              <h2 class="about-font-header">Neko Sushi - since 1982</h2>
+              <p class="about-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos ad, porro labore a dicta corrupti natus blanditiis, quia
+                rerum eveniet excepturi! Magnam voluptate quam fugiat beatae
+                consectetur? Obcaecati, dolorum similique?
+              </p>
+              <div class="social-icons">
+                <ul class="social-icons-ul">
+                  <li class="social-icon-li"><a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="social-icon-li"><a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                  <li class="social-icon-li"><a href="https://twitter.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                  <li class="social-icon-li"><a href="https://www.tiktok.com/en/"target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+              </div>
+              <button
+                class="btn about-btn-view"
+                onclick="window.location.href='https://www.yelp.com/';"
+              >
+                View on Yelp
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="menu" class="section-main">
+          <div class="div-menu-container">
+            <h1 class="section-title">Menu</h1>
+            <div class="menu-banner-container">
+              <div class="menu-banner">
+                <h1 class="menu-font-banner">寿司セット</h1>
+              </div>
+              <div class="menu-banner-2">
+                <div class="menu-banner2-content">
+                  <h1 class="menu-font-banner2">70% OFF</h1>
+                </div>
+                <div class="menu-banner2-img"></div>
+              </div>
+            </div>
+            
+            <h1 class="menu-font-sub">Handmade Special</h1>
+            <div class="div-menu-list">
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+              <div class="menu-wrapper">
+                <div class="menu-img"></div>
+                <div class="menu-content">
+                  <h3 class="menu-font-name menu-font">Special Sushi Roll</h3>
+                  <p class="menu-font-description menu-font">
+                    Lorem ipsum dolor sit amet contur adipisicing elit.
+                  </p>
+                  <p class="menu-font-price menu-font">$10.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="team" class="section-main">
+          <div class="team-banner">
+            <h1 class="team-font-banner">寿司職人<br />SUSHI CHEF</h1>
+          </div>
+          <div class="team-list">
+            <div class="team-member team-member-1">
+              <div class="member-info info-1">
+                <div class="team-member-name">
+                  <p class='chef-name'>Koharu</p>
+                  <div class="chef-social">
+                    <ul class="chef-social-ul">
+                      <li class="chef-social-li"><a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="chef-social-li"><a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                      <li class="chef-social-li"><a href="https://twitter.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member team-member-lar">
+              <div class="member-info info-1">
+                <div class="team-member-name">
+                  <p class='chef-name'>Tsumuo</p>
+                  <div class="chef-social">
+                    <ul class="chef-social-ul">
+                      <li class="chef-social-li"><a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="chef-social-li"><a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                      <li class="chef-social-li"><a href="https://twitter.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member team-member-3">
+              <div class="member-info info-1">
+                <div class="team-member-name">
+                  <p class='chef-name'>Akiara</p>
+                  <div class="chef-social">
+                    <ul class="chef-social-ul">
+                      <li class="chef-social-li"><a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="chef-social-li"><a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                      <li class="chef-social-li"><a href="https://twitter.com/"target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-footer">-- 最高の寿司を作るだけ</div>
+        </section>
+        <section id="reservation">
+          <div class="reservation-wrapper section-main">
+            <div class="placeholder"></div>
+            <div class="res-content-wrapper">
+              <h1 class="font-title res-font-title section-title">Reservation</h1>
+              <h1 class="res-font-title2">Book now to start your sushi journey</h1>
+              <p class="res-font-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+                omnis, non enim officia laborum veritatis eius corporis id, totam
+                itaque expedita nemo dignissimos excepturi! Iusto
+              </p>
+            </div>
+    
+            <form action="" class="res-form">
+              <h1 class="res-font-title-form">Book Now</h1>
+              <input
+                type="text"
+                name="name"
+                class="res-in res-name-in"
+                placeholder="Your Name" 
+                required=""
+                oninvalid="this.setCustomValidity('Please enter your name')"
+                oninput="setCustomValidity('')"
+              />
+              <input
+                type="email"
+                name="email"
+                class="res-in res-email-in"
+                placeholder="Your Email"
+                required=""
+                oninvalid="this.setCustomValidity('Please enter valid email')"
+                oninput="setCustomValidity('')"
+              />
+              <input
+                type="tel"
+                name="phone"
+                class="res-in res-phone-in"
+                id="input-phone"
+                placeholder="Phone Number"
+                required
+              />
+              <input
+                type="date"
+                name="date"
+                class="res-in res-date-in"
+                required
+              />
+              <input
+                type="number"
+                name="people"
+                class="res-in res-people-in"
+                placeholder="Amount People"
+                min="1"
+                max="10"
+                required
+              />
+              <button type="submit" class="btn res-btn-submit">Make Reservation</button>
+            </form>
+            <div class="placeholder"></div>
+          </div>
+        </section>
+        <section id="contact" class="section-main">
+            <h1 class="section-title">Contact us</h1>
+            <div id="map"></div>
+            <div class="contact-wrapper">        
+                <div class="map-content contact-item">
+                    Address:<br><br>
+                    <small>3671 Westminster Hwy<br>Richmond, BC <br><br></small>
+                    Postal Code:<br><br> 
+                    <small>V7C 5V2</p></small>
+                </div>
+                <div class="contact-info contact-item">
+                    Phone: <br><br>
+                    <small>(604)-111-1234<br><br></small>
+                    Fax: <br><br>
+                    <small>+1 (800)-222-2345<br><br></small>
+                </div>
+                <div class="hour-info contact-item">
+                    <div class="hour-wrapper">Operating hours
+                        <ul class="hours-ul">
+                            <li class="hours-li"><small>Monday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Tuesday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Wednesday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Thursday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Friday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Saturday: 11a.m.–3p.m.</small></li>
+                            <li class="hours-li"><small>Sunday: Closed</small></li>
+                        </ul>      
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer>
+          <div class="footer-wrapper">
+            <div>Copyright ©2021 All rights reserved <br><br> Source code owned by <small>Lin Zhang</small></div>
+          </div>
+        </footer>
+      </section>
+    </section>
+
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="js/navQ.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/cleave.js"></script>
+    <script src="js/cleave-phone.ca.js"></script>
+    <script>
+      var cleave = new Cleave('#input-phone', {
+        phone: true,
+        phoneRegionCode: 'CA'
+      });
+    </script>
+    <script>
+        function initMap(){
+            const location = {lat:49.17029068714723,lng:-123.1831167879101}
+            const map=new google.maps.Map(document.getElementById('map'),{
+                zoom:16,
+                center:location
+            })
+            var marker=new google.maps.Marker(
+                {position:location,map:map}
+            );
+        }
+    </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudyF2DWrHuD7ZEux4r8UvFioJYknIsss&callback=initMap"
+      type="text/javascript"></script>
+  </body>
+</html>
